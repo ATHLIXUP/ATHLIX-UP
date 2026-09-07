@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATHLIX UP | 野球選手のためのオンラインパーソナル</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: #111;
+      background: #f7f7f7;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #ff6b35;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 13px;
+    }
+
+    .hero {
+      background: #111;
+      color: white;
+      padding: 85px 20px 95px;
+      text-align: center;
+    }
+
+    .hero small {
+      color: #ff6b35;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 10vw, 72px);
+      line-height: 1.15;
+      margin: 20px 0;
+      font-weight: 900;
+    }
+
+    .hero h1 span {
+      color: #ff6b35;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #ddd;
+      font-size: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 32px;
+      background: #ff6b35;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 75px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title small {
+      color: #ff6b35;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      margin-top: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 22px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .message {
+      background: #111;
+      color: white;
+      max-width: none;
+      text-align: center;
+    }
+
+    .message p {
+      max-width: 700px;
+      margin: 20px auto 0;
+      color: #ddd;
+    }
+
+    .price-card {
+      background: white;
+      border-radius: 16px;
+      padding: 35px 25px;
+      text-align: center;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: 900;
+      margin: 15px 0;
+    }
+
+    .price span {
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">ATHLIX <span>UP</span></div>
+
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#service">SERVICE</a>
+      <a href="#price">PRICE</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <small>BASEBALL × TRAINING</small>
+
+  <h1>
+    野球選手の<br>
+    <span>身体を変える。</span>
+  </h1>
+
+  <p>
+    ATHLIX UPは、野球選手のパフォーマンス向上を目的とした
+    オンラインパーソナルトレーニングサービスです。
+  </p>
+
+  <a class="button" href="#price">サービスを見る</a>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <small>ABOUT ATHLIX UP</small>
+    <h2>野球に必要な身体をつくる</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>⚾ 野球特化</h3>
+      <p>
+        野球選手の動作や競技特性を考えた
+        トレーニングを提案します。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💪 身体能力向上</h3>
+      <p>
+        筋力・パワー・身体操作など、
+        パフォーマンス向上につながる身体づくり。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📱 オンライン</h3>
+      <p>
+        自宅やジムからでもOK。
+        あなたの環境に合わせてサポートします。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="service" class="message">
+  <div class="section-title">
+    <small>SERVICE</small>
+    <h2>あなたの目標に合わせて</h2>
+  </div>
+
+  <p>
+    球速を上げたい。身体を大きくしたい。
+    ケガをしにくい身体をつくりたい。
+    そんな野球選手の目標に合わせて、
+    トレーニングを一緒に組み立てます。
+  </p>
+</section>
+
+<section id="price">
+  <div class="section-title">
+    <small>PRICE</small>
+    <h2>オンラインパーソナル</h2>
+  </div>
+
+  <div class="price-card">
+    <h3>オンラインパーソナル 60分</h3>
+
+    <div class="price">
+      ¥5,000 <span>/ session</span>
+    </div>
+
+    <p>
+      60分間のオンラインパーソナルトレーニング。
+      あなたの目標に合わせてサポートします。
+    </p>
+
+    <a class="button" href="#">
+      お申し込みはこちら
+    </a>
+  </div>
+
+  <br>
+
+  <div class="price-card">
+    <h3>オンラインパーソナル 90分</h3>
+
+    <div class="price">
+      ¥7,000 <span>/ session</span>
+    </div>
+
+    <p>
+      よりじっくり取り組みたい方向けの
+      90分パーソナルトレーニング。
+    </p>
+
+    <a class="button" href="#">
+      お申し込みはこちら
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 ATHLIX UP</p>
+  <p>野球筋肉ニキ</p>
+</footer>
+
+</body>
+</html>
